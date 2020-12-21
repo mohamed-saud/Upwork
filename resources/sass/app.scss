@@ -1,0 +1,34 @@
+// Include Libraries
+//@import '~bootstrap/scss/bootstrap';
+@import "./partials/font-awesome";
+
+/*
+ * This injects Tailwind's base styles, which is a combination of
+ * Normalize.css and some additional base styles.
+ */
+@tailwind preflight;
+
+/*
+ * This injects all of Tailwind's utility classes, generated based on your config file.
+*/
+@tailwind utilities;
+
+/*
+ * This injects any component classes registered by plugins.
+*/
+@tailwind components;
+
+// Include Modules
+@import './modules/all';
+
+// Include Layouts
+@import "./layout/navbar";
+@import "./layout/header-home";
+@import "./layout/footer";
+@import "./layout/loading";
+@import "./layout/tags";
+
+// Include Pages
+@import "./pages/home";
+
+@import "./rate"

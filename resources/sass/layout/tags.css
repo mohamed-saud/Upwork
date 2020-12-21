@@ -1,0 +1,11 @@
+.tags-input-wrapper {
+  border: 1px solid #dae1e7;
+  margin-top: .75rem;
+  padding: .75rem;
+}
+
+.tags-input-wrapper input {
+  height: 100%;
+  outline: none;
+}
+/*# sourceMappingURL=tags.css.map */

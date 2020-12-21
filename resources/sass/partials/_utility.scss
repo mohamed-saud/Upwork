@@ -1,0 +1,113 @@
+
+// Space Elements
+
+.space-p{
+    padding:$space-section 0
+}
+.space-m{
+    margin: $space-section 0
+}
+.space-pb{
+    padding-bottom: $space-section
+}
+.space-mb{
+    margin-bottom: $space-section
+}
+.space-pt{
+    padding-top: $space-section
+}
+.space-mt{
+    margin-top: $space-section
+}
+
+@include breakpoint('max-width','md'){
+    .space-p{
+        padding:$small-space 0
+    }
+    .space-m{
+        margin: $small-space 0
+    }
+    .space-pb{
+        padding-bottom: $small-space
+    }
+    .space-mb{
+        margin-bottom: $small-space
+    }
+    .space-pt{
+        padding-top: $small-space
+    }
+    .space-mt{
+        margin-top: $small-space
+    }
+}
+// Colors Classes
+.bg-black{
+    background: $black
+}
+.bg-gray{
+    background: $gray
+}
+.bg-main-color{
+    background: $main-color
+}
+.co-main-color{
+    color:$main-color
+}
+.bg-mid-gray{
+    background: $mid-gray
+}
+.co-mid-gray{
+    color: $mid-gray
+}
+.bg-yellow{
+    background: $yellow
+}
+.br-yellow{
+    border:1px solid $yellow
+}
+.br-black{
+    border:1px solid #000
+}
+.co-yellow{
+    color: $yellow
+}
+.bg-red{
+    background: $red
+}
+.co-red{
+    color:$red
+}
+.bg-blue{
+    background: $blue
+}
+.co-blue{
+    color:$blue
+}
+.bg-rose{
+    background: $rose;
+}
+.bg-light-blue{
+    background: $light-blue
+}
+.shadow{
+    box-shadow: 3px 3px 3px rgba($gray,.9),-3px -3px 3px rgba($gray,.9)
+}
+
+.box-shadow{
+    padding:20px;
+}
+
+.space-title{
+    padding:15px 30px
+}
+
+.line-height-big{
+    line-height: 1.9em
+}
+
+.style-line{
+    text-decoration: line-through
+}
+.ltr{
+    direction: ltr
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html class="font-sans" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Header</title>
+    <link rel="stylesheet" href="../public/css/app.css"/>
+  </head>
+  <body>
+    <nav class="navbar bg-blue text-white z-50 fixed pin-x pin-t">
+      <div class="container mx-auto">
+        <div class="navbar flex items-center justify-between flex-wrap">
+          <div class="mr-auto flex items-center">
+            <button class="navbar_toggle mr-6 text-white" type="button" data-target="#navbarMenu"><i class="fa fa-bars"></i></button><a class="font-bold no-underline text-white" href="./index.html">Navbar Logo</a>
+            <ul class="list-reset hidden items-center ml-8 lg:flex">
+              <li class="capitalize"><a class="relative px-4 py-6 block text-white no-underline hover:bg-blue-light dropdown_button cursor-pointer" data-toggle="#dropdown"> <i class="fas fa-boxes mr-1"></i>preview project<i class="ml-1 fas fa-chevron-down"></i></a>
+                <ul class="list-reset absolute bg-white shadow navbar_dropdown p-2" id="dropdown">
+                  <li> <a class="text-black no-underline p-2 block text-center hover:bg-grey-lighter" href="#">Egypt</a></li>
+                  <li> <a class="text-black no-underline p-2 block text-center hover:bg-grey-lighter" href="#">Egypt</a></li>
+                  <li> <a class="text-black no-underline p-2 block text-center hover:bg-grey-lighter" href="#">Egypt</a></li>
+                  <li> <a class="text-black no-underline p-2 block text-center hover:bg-grey-lighter" href="#">Egypt</a></li>
+                </ul>
+              </li>
+              <li class="capitalize"><a class="px-4 py-6 block text-white no-underline hover:bg-blue-light" href="./addNewProject.html"><i class="fas fa-plus mr-1"></i>add project  </a></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="list-reset flex items-center">
+              <li class="ml-6"><a class="text-white no-underline capitalize border py-2 px-3 hover:bg-blue-light block dropdown_button cursor-pointer" data-toggle="#language"><i class="fas fa-plus mr-1"></i>language</a>
+                <ul class="list-reset absolute bg-white shadow navbar_dropdown p-2" id="language">
+                  <li> <a class="text-black no-underline p-2 block text-center hover:bg-grey-lighter" href="#">English</a></li>
+                  <li> <a class="text-black no-underline p-2 block text-center hover:bg-grey-lighter" href="#">Arabic</a></li>
+                </ul>
+              </li>
+              <li class="ml-6 hidden md:inline-block"><a class="text-white no-underline capitalize border py-2 px-3 hover:bg-blue-light block" href="./login.html"><i class="fas fa-plus mr-1"></i>login</a></li>
+              <li class="ml-6 hidden md:inline-block"><a class="text-white no-underline capitalize border py-2 px-3 hover:bg-blue-light block" href="./register.html"><i class="fas fa-users mr-1"></i>register</a></li>
+              <li class="ml-2 hidden md:inline-block"><a class="text-white no-underline capitalize hover:bg-blue-light px-4 py-6 block" href="#"><i class="fa fa-search"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="menu fixed h-screen pin-y shadow-lg pin z-50" id="navbarMenu">
+      <ul class="list-reset p-3 nav bg-white h-full max-h-full overflow-y-auto text-center">
+        <li><a class="close-menu text-black no-underline capitalize py-3 px-4 block hover:text-blue text-right" href="#">x</a></li>
+        <li><a class="text-black no-underline capitalize py-3 px-4 block hover:bg-grey-light hover:text-blue" href="./index.html">Home</a></li>
+        <li><a class="text-black no-underline capitalize py-3 px-4 block hover:bg-grey-light hover:text-blue" href="./projectSort.html">preview project</a></li>
+        <li><a class="text-black no-underline capitalize py-3 px-4 block hover:bg-grey-light hover:text-blue" href="./addNewProject.html">add project</a></li>
+        <li><a class="text-black no-underline capitalize py-3 px-4 block hover:bg-grey-light hover:text-blue" href="./myWorks.html">my works</a></li>
+        <li><a class="text-black no-underline capitalize py-3 px-4 block hover:bg-grey-light hover:text-blue" href="./myOffers.html">my offers</a></li>
+        <li><a class="text-black no-underline capitalize py-3 px-4 block hover:bg-grey-light hover:text-blue" href="./login.html">login</a></li>
+        <li><a class="text-black no-underline capitalize py-3 px-4 block hover:bg-grey-light hover:text-blue" href="./register.html">register</a></li>
+        <li><a class="text-black no-underline capitalize py-3 px-4 block hover:bg-grey-light hover:text-blue" href="./profile.html">profile</a></li>
+        <li><a class="text-black no-underline capitalize py-3 px-4 block hover:bg-grey-light hover:text-blue" href="./editProfile.html">edit Profile</a></li>
+        <li><a class="text-black no-underline capitalize py-3 px-4 block hover:bg-grey-light hover:text-blue" href="./singleProject.html">single project</a></li>
+        <li><a class="text-black no-underline capitalize py-3 px-4 block hover:bg-grey-light hover:text-blue" href="./completeProfile.html">complete Profile</a></li>
+      </ul>
+    </div>
+    <div class="loading show z-50 fixed pin bg-blue flex items-center justify-center"><div class="loader">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>.
+    </div>
+    <div class="py-8 sm:py-16" style="margin-top:66px">
+      <div class="container">
+        <div class="bg-white shadow-md py-8 px-4 sm:p-16 lg:w-3/5 md:w-4/5 mx-auto">
+          <h3 class="capitalize text-xl sm:text-3xl text-center text-blue mb-6 sm:mb-10">Register To Site Name</h3>
+          <ul class="list-reset social-media text-center my-3 sm:my-6">
+            <li class="inline-block"><a class="no-underline inline-block text-center rounded-full bg-grey-light facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="inline-block"><a class="no-underline inline-block text-center rounded-full bg-grey-light twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+            <li class="inline-block"><a class="no-underline inline-block text-center rounded-full bg-grey-light google" href="#"><i class="fab fa-google"></i></a></li>
+          </ul>
+          <p class="text-center text-grey-darker capitalize mb-6 text-xs sm:text-base">or use email for registration </p>
+          <form action="">
+            <div class="mb-2 sm:mb-4 ">
+              <label class="capitalize text-sm sm:text-base">first name</label>
+              <input class="block border mt-3 p-2 sm:p-3 w-full text-xs sm:text-sm w-full" type="text" required="required"/>
+            </div>
+            <div class="mb-2 sm:mb-4 ">
+              <label class="capitalize text-sm sm:text-base">last name</label>
+              <input class="block border mt-3 p-2 sm:p-3 w-full text-xs sm:text-sm w-full" type="text" required="required"/>
+            </div>
+            <div class="mb-2 sm:mb-4 ">
+              <label class="capitalize text-sm sm:text-base">email</label>
+              <input class="block border mt-3 p-2 sm:p-3 w-full text-xs sm:text-sm w-full" type="email" required="required"/>
+            </div>
+            <div class="mb-2 sm:mb-4 ">
+              <label class="capitalize text-sm sm:text-base">password</label>
+              <input class="block border mt-3 p-2 sm:p-3 w-full text-xs sm:text-sm w-full" type="password" required="required"/>
+            </div>
+            <div class="mb-2 sm:mb-4 ">
+              <label class="capitalize text-sm sm:text-base">confirm password</label>
+              <input class="block border mt-3 p-2 sm:p-3 w-full text-xs sm:text-sm w-full" type="password" required="required"/>
+            </div>
+            <div>
+              <button class="text-sm sm:text-sm text-white capitalize border py-3 px-10 bg-blue mt-4 hover:bg-blue-dark w-full" type="submit">Register</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Copy Right-->
+    <div class="bg-grey-light py-4">
+      <div class="container text-center">
+        <p class="text-sm sm:text-base">&copy; All rights reserved to Mohamed Sayed</p>
+      </div>
+    </div>
+    <script src="../public/js/app.js"></script>
+  </body>
+</html>

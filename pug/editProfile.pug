@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+html(lang="en", class="font-sans")
+    //- Include Header.pug
+    include partials/header.pug
+
+    body
+        //- Include Navbar.pug
+        include partials/navbar.pug
+
+        //- Include Loading.put
+        include partials/loading.pug
+        
+
+        //- Login Form
+
+        div(class="py-6 sm:py-16",style="margin-top:66px")
+            div(class="container")
+
+                div(class="bg-white shadow-md py-6 px-4 sm:p-16 lg:w-3/5 md:w-4/5 mx-auto")
+                    h3(class="capitalize text-xl sm:text-3xl text-center text-blue mb-6 sm:mb-10") Edit profile
+                    
+                    form(action="", class="text-xs sm:text-base")
+
+                        div(class="mb-2 sm:mb-4 text-center relative mx-auto", style="width:120px")
+                            img(src="../public/images/profile.png", class="rounded-full w-full upload_image_url", style="height:120px")
+                            input(class="absolute pin w-full opacity-0 z-50 cursor-pointer upload_image", type="file")
+                            i(class="fas fa-camera absolute pin flex items-center justify-center rounded-full text-xl text-white", style="background:rgba(0,0,0,.4)")
+
+                        div(class="mb-2 sm:mb-4")
+                            label(class="capitalize text-sm sm:text-base") first name
+                            input(type="text",class="block border mt-3 w-full bg-grey-lighter p-2 sm:p-3 w-full" required value="Mohamed")
+                        
+                        div(class="mb-2 sm:mb-4")
+                            label(class="capitalize text-sm sm:text-base") last name
+                            input(type="text",class="block border mt-3 w-full bg-grey-lighter p-2 sm:p-3 w-full" required value="Khaled")
+                        
+                        div(class="mb-2 sm:mb-4")
+                            label(class="capitalize text-sm sm:text-base") profile type
+                            input(type="text",class="block border mt-3 w-full bg-grey-lighter p-2 sm:p-3 w-full" required value="freelance")
+                        
+                        div(class="mb-2 sm:mb-4")
+                            label(class="capitalize text-sm sm:text-base") sex
+                            select(class="block border mt-3 w-full bg-grey-lighter p-2 sm:p-3 w-full", name="sex")
+                                option(value="male") Male
+                                option(value="famale") Famale
+
+                        div(class="mb-2 sm:mb-4")
+                            label(class="capitalize text-sm sm:text-base") language
+                            select(class="block border mt-3 w-full bg-grey-lighter p-2 sm:p-3 w-full", name="language")
+                                option(value="male") English
+                                option(value="famale") Arabic
+
+                        div(class="mb-2 sm:mb-4")
+                            label(class="capitalize text-sm sm:text-base") country
+                            select(class="block border mt-3 w-full bg-grey-lighter p-2 sm:p-3 w-full", name="country")
+                                option(value="") Cairo
+                                option(value="") USA
+
+                        div(class="")
+                            button(type="submit",class="text-sm sm:text-base text-white capitalize border py-3 px-10 bg-blue mt-4 hover:bg-blue-dark w-full") save
+        
+        //- Include Footer.pug
+        include partials/copyright.pug

@@ -1,0 +1,16 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
+    "/pages/addNewProject.html": "/pages/addNewProject.html",
+    "/pages/completeProfile.html": "/pages/completeProfile.html",
+    "/pages/editProfile.html": "/pages/editProfile.html",
+    "/pages/employers.html": "/pages/employers.html",
+    "/pages/index.html": "/pages/index.html",
+    "/pages/login.html": "/pages/login.html",
+    "/pages/myOffers.html": "/pages/myOffers.html",
+    "/pages/myWorks.html": "/pages/myWorks.html",
+    "/pages/profile.html": "/pages/profile.html",
+    "/pages/projectSort.html": "/pages/projectSort.html",
+    "/pages/register.html": "/pages/register.html",
+    "/pages/singleProject.html": "/pages/singleProject.html"
+}

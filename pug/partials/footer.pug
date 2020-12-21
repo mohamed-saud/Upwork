@@ -1,0 +1,40 @@
+footer(class="footer")
+    div(class="container mx-auto py-10 sm:py-16")
+
+        div(class="flex flex-wrap")
+            div(class="w-full sm:w-1/2 md:w-1/3")
+                h3(class="text-base sm:text-xl font-semibold capitalize mb-3") road map
+                ul(class="list-reset")
+                    each val in ['home','about us','contact us','profile']
+                        li
+                            a(class="no-underline mt-3 inline-block capitalize  text-black hover:text-blue text-sm sm:text-base", href="#")= val
+
+            div(class="w-full sm:w-1/2 md:w-1/3 sm:mt-0 mt-6")
+                h3(class="text-base sm:text-xl font-semibold capitalize mb-3") related link
+                ul(class="list-reset")
+                    each val in ['hiring Employees','add new project','profile']
+                        li
+                            a(class="no-underline mt-3 inline-block capitalize text-black hover:text-blue text-sm sm:text-base", href="#")= val
+
+            div(class="w-full lg:w-1/3 md:w-1/3 md:mt-0 mt-6")
+                h3(class="text-base sm:text-xl font-semibold capitalize mb-3") contact us
+
+                ul(class="list-reset social-media")
+
+                    li(class="inline-block")
+                        a(class="no-underline mt-3 inline-block text-center rounded-full bg-grey-light facebook", href="#")
+                            i(class="fab fa-facebook-f")
+
+                    li(class="inline-block")
+                        a(class="no-underline mt-3 inline-block text-center rounded-full bg-grey-light twitter", href="#")
+                            i(class="fab fa-twitter")
+
+                    li(class="inline-block")
+                        a(class="no-underline mt-3 inline-block text-center rounded-full bg-grey-light instagram", href="#")
+                            i(class="fab fa-instagram")
+
+                    li(class="inline-block")
+                        a(class="no-underline mt-3 inline-block text-center rounded-full bg-grey-light linkedin", href="#")
+                            i(class="fab fa-linkedin")
+
+include ./copyright.pug

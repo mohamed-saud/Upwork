@@ -1,0 +1,27 @@
+.social-media{
+  a{
+    width:40px;
+    height: 40px;
+    line-height:40px;
+    color:#000;
+    transition:all .5s ease;
+    &:hover{
+      color:#fff
+    }
+  }
+  .facebook:hover{
+    background:$facebook;
+  }
+  .twitter:hover{
+    background:$twitter;
+  }
+  .linkedin:hover{
+    background:$linkedin;
+  }
+  .instagram:hover{
+    background:$instagram;
+  }
+  .google:hover{
+    background: $google;
+  }
+}

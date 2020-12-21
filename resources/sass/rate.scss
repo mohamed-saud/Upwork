@@ -1,0 +1,56 @@
+.rate{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    
+    input{
+        display: none
+    }
+    
+    label{
+        position: relative;
+        font-size: 35px;
+        color: #FFD700;
+        cursor: pointer;
+    }
+    
+    label::before{ 
+        content: "\2605";
+        position: absolute;
+        opacity: 0;
+    }
+    
+    label:hover ~ label::before , label:hover:before {
+        opacity: 1!important;
+    }
+    
+    &:hover > input:checked ~ label:before{ 
+        opacity: 0.4; 
+    }
+    
+    input:checked ~ label:before {
+        opacity: 1;
+    }
+}
+
+.rate-disabled{
+    display: flex;
+    flex-direction: row-reverse;
+    // justify-content: flex-end;
+
+    label::before{ 
+        content: "\2605";
+        position: absolute;
+        opacity: 0;
+    }
+    label.checked ~ label:before, label.checked::before{
+        opacity: 1;
+    }
+    label{
+        position: relative;
+        font-size: 20px;
+        color: #FFD700;
+        cursor: pointer;
+    }
+
+}

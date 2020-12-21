@@ -1,0 +1,47 @@
+.menu{
+  background:rgba($color: #000000, $alpha: .5);
+  transform: translateX(-250px);
+  transition:all 1s ease;
+  visibility: hidden;
+  opacity: 0;
+  margin-right:-250px;
+  .nav{
+    width:230px
+  }
+  &.open{
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible
+  }
+}
+
+.navbar{
+  transition: all .5s ease;
+  &.scrolling{
+    transform: translateY(-66px)
+  }
+}
+
+.toggle_profile_menu{
+  order:2;
+  @include breakpoint('max-width', 'sm'){
+    display:none;
+  }
+  &.open{
+    display: flex
+  }
+  @include breakpoint('min-width', 'sm'){
+    order:0
+  }
+}
+
+.navbar_dropdown{
+  position: absolute;
+  width:180px;
+  top: 0px;
+  transform: translate3d(0px, 65px, 0px);
+  display:none;
+  &.show{
+    display: block
+  }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+html(lang="en", class="font-sans")
+    //- Include Header.pug
+    include partials/header.pug
+
+    body
+        //- Include Navbar.pug
+        include partials/navbar.pug
+
+        //- Include Loading.put
+        include partials/loading.pug
+        
+
+        //- Login Form
+
+        div(class="py-8 sm:py-16",style="margin-top:66px")
+            div(class="container")
+                div(class="bg-white shadow-md py-8 px-4 sm:p-16 lg:w-3/5 md:w-4/5 mx-auto")
+                    h3(class="capitalize text-xl sm:text-3xl text-center text-blue mb-6 sm:mb-10") Register To Site Name
+                    
+                    //- Social Media
+                    ul(class="list-reset social-media text-center my-3 sm:my-6")
+
+                        li(class="inline-block")
+                            a(class="no-underline inline-block text-center rounded-full bg-grey-light facebook", href="#")
+                                i(class="fab fa-facebook-f")
+
+                        li(class="inline-block")
+                            a(class="no-underline inline-block text-center rounded-full bg-grey-light twitter", href="#")
+                                i(class="fab fa-twitter")
+
+                        li(class="inline-block")
+                            a(class="no-underline inline-block text-center rounded-full bg-grey-light google", href="#")
+                                i(class="fab fa-google")
+
+                    p(class="text-center text-grey-darker capitalize mb-6 text-xs sm:text-base") or use email for registration 
+
+                    form(action="")
+                        div(class="mb-2 sm:mb-4 ")
+                            label(class="capitalize text-sm sm:text-base") first name
+                            input(type="text",class="block border mt-3 p-2 sm:p-3 w-full text-xs sm:text-sm w-full" required)
+                        
+                        div(class="mb-2 sm:mb-4 ")
+                            label(class="capitalize text-sm sm:text-base") last name
+                            input(type="text",class="block border mt-3 p-2 sm:p-3 w-full text-xs sm:text-sm w-full" required)
+
+                        div(class="mb-2 sm:mb-4 ")
+                            label(class="capitalize text-sm sm:text-base") email
+                            input(type="email",class="block border mt-3 p-2 sm:p-3 w-full text-xs sm:text-sm w-full" required)
+
+                        div(class="mb-2 sm:mb-4 ")
+                            label(class="capitalize text-sm sm:text-base") password
+                            input(type="password",class="block border mt-3 p-2 sm:p-3 w-full text-xs sm:text-sm w-full" required)
+
+                        div(class="mb-2 sm:mb-4 ")
+                            label(class="capitalize text-sm sm:text-base") confirm password
+                            input(type="password",class="block border mt-3 p-2 sm:p-3 w-full text-xs sm:text-sm w-full" required)
+
+                        div(class="")
+                            button(type="submit",class="text-sm sm:text-sm text-white capitalize border py-3 px-10 bg-blue mt-4 hover:bg-blue-dark w-full") Register
+        
+        //- Include Footer.pug
+        include partials/copyright.pug

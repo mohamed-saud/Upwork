@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+html(lang="en", class="font-sans")
+    //- Include Header.pug
+    include partials/header.pug
+
+    body
+        //- Include Navbar.pug
+        include partials/navbar.pug
+
+        div(class="w-full bg-grey-lighter py-6 sm:py-16", style="margin-top:66px")
+            div(class="container")
+                div(class="py-2 sm:p-4")
+                    - for(var i=0; i < 12; i++)
+                        a(class="flex no-underline items-center text-black border-b py-3 sm:p-3 hover:bg-grey-light", href="./singleProject.html")
+                            img(src="../public/images/profile.png", class="rounded-full mr-3 border p-1", style="width:80px;height:80px")
+                            div(class="w-full")
+                                div(class="justify-between flex items-center")
+                                    h3(class="text-base sm:text-lg font-semibold capitalize mb-3 text-blue hover:text-blue-dark") create full e-commerce website
+                                    span(class="p-2 bg-red text-white capitalize text-xs sm:text-sm") canceled
+                                ul(class="list-reset")
+                                    li(class="mr-3 inline-block text-xs sm:text-sm")
+                                        i(class="fas fa-user mr-2")
+                                        span Mohamed Sayed
+                                    li(class="mr-3 inline-block text-xs sm:text-sm")
+                                        i(class="fas fa-clock mr-2")
+                                        span 3 hours ago
+
+        //- Include Loading.put
+        include partials/loading.pug
+        
+    //- Include Footer.pug
+
+    include partials/footer.pug

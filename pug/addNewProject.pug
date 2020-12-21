@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+html(lang="en", class="font-sans")
+    //- Include Header.pug
+    include partials/header.pug
+
+    body
+        //- Include Navbar.pug
+        include partials/navbar.pug
+
+        //- Include Loading.put
+        include partials/loading.pug
+        
+
+        //- Login Form
+
+        div(class="py-6 sm:py-16",style="margin-top:66px")
+            div(class="container")
+
+                div(class="bg-white shadow-md py-6 px-4 sm:p-16 lg:w-3/5 md:w-4/5 mx-auto")
+                    h3(class="capitalize text-xl sm:text-3xl text-center text-blue mb-6 sm:mb-10") Add Project
+                    
+                    form(action="", class=" text-xs sm:text-base")
+                        div(class="mb-2 sm:mb-4")
+                            label(class="capitalize text-sm sm:text-base") project title
+                            input(type="text",class="block border mt-3 p-2 sm:p-3 w-full" required placeholder="Add a short title about project")
+                        
+                        div(class="mb-2 sm:mb-4")
+                            label(class="capitalize text-sm sm:text-base") require skills
+                            span(class="text-red ml-3 font-normal") Press ( Shift ) to add skills
+                            div(class="required_skills")
+                                div(class="tags my-3")
+                                input(type="text",class="block border p-2 sm:p-3 w-full" required placeholder="Add require skills")
+                                input(type="text",hidden)
+                                
+                        div(class="mb-2 sm:mb-4")
+                            label(class="capitalize text-sm sm:text-base") project details
+                            textarea(type="email",rows="5",class="block border mt-3 p-2 sm:p-3 w-full" required placeholder="Add an accurate description of your project")
+
+                        div(class="mb-2 sm:mb-4 relative")
+                            label(class="capitalize text-sm sm:text-base block") Upload files
+                            input(type="file",class="upload_file w-full opacity-0 absolute pin")
+                            div(class="block border mt-3 p-2 sm:p-3")
+                                i(class="fas fa-upload")
+                                p(class="capitalize inline-block text-sm sm:text-base") upload 
+                                span(class="ml-3 text-grey-dark upload_file_name") ( You still have not upload any file   ) 
+
+
+                        div(class="mb-2 sm:mb-4")
+                            label(class="capitalize text-sm sm:text-base") deadline time
+                            input(type="number",class="block border mt-3 p-2 sm:p-3 w-full" min="1" required placeholder="Decide the expected time")
+
+                        div(class="mb-2 sm:mb-4")
+                            label(class="capitalize text-sm sm:text-base") price
+                            input(type="number",class="block border mt-3 p-2 sm:p-3 w-full" min="1" required placeholder="Decide the price")
+
+                        div(class="")
+                            button(type="submit",class="text-white capitalize border py-3 px-10 bg-blue mt-4 hover:bg-blue-dark w-full text-sm sm:text-base") Post now
+        
+        //- Include Footer.pug
+        include partials/copyright.pug

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+html(lang="en", class="font-sans")
+    //- Include Header.pug
+    include partials/header.pug
+
+    body
+        //- Include Navbar.pug
+        include partials/navbar.pug
+
+        //- Include Loading.put
+        include partials/loading.pug
+        
+        //- Image and User Name 
+        div(class="bg-white py-6 sm:py-10 border-b",style="margin-top:66px")
+            div(class="container")
+                div(class="text-center")
+                    a(href="./profile.html")
+                        img(src="../public/images/profile.png", class="rounded-full", style="width:130px;height:130px")
+                    h3(class="font-normal text-xl sm:text-2xl my-3") Mohamed Sayed
+                    ul(class="text-xs sm:text-sm")
+                        li(class="mr-2 inline-block mb-2")
+                            i(class="fas fa-user mr-2")
+                            span Freelance
+                        li(class="mr-2 inline-block")
+                            i(class="fas fa-map-marker mr-2")
+                            span Cairo
+                        li(class="mr-2 inline-block")
+                            i(class="fas fa-briefcase mr-2")
+                            span Front-End Developer & Js Developer
+
+        //- Breadcrumb
+        div(class="bg-blue")
+            div(class="container")
+                div(class="flex flex-wrap items-center justify-between")
+
+                    ul(class="text-sm sm:text-base toggle_profile_menu my-2 md:my-auto list-reset flex flex-2 w-full flex-col md:flex-row md:w-auto profile_links md:flex")
+                        li 
+                            a(class="block text-white no-underline hover:bg-blue-light bg-blue-light p-2 sm:p-4", href="#profile")
+                                i(class="fas fa-user mr-2")
+                                |Profile
+                        li 
+                            a(class="p-2 sm:p-4 block text-white no-underline hover:bg-blue-light", href="#myWorks")
+                                i(class="fas fa-briefcase mr-2")
+                                |My Works
+                        li 
+                            a(class="p-2 sm:p-4 block text-white no-underline hover:bg-blue-light", href="#myOffers")
+                                i(class="fas fa-boxes mr-2")
+                                |My Offers
+
+                    ul(class="list-reset flex justify-between w-full md:w-auto items-center")
+                        li(class="inline-block md:hidden button_profile_menu")
+                            a(class="text-white no-underline capitalize hover:bg-blue-light block p-4", href="#")
+                                i(class="fas fa-bars")
+                        li 
+                            a(class="text-white no-underline capitalize border py-2 px-3 hover:bg-blue-light block text-sm sm:text-base", href="./editProfile.html")
+                                i(class="fas fa-cogs mr-2")
+                                |Profile Settings
+
+        //- Profile Info
+
+        div(class="py-6 sm:py-16 bg-grey-lighter")
+            div(class="container")
+                div(class="profile_tabs")
+                    //- Include Profile Tabs
+                    include partials/profileTabs.pug
+    //- Include Footer.pug
+
+    include partials/footer.pug
